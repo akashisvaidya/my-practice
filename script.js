@@ -242,13 +242,183 @@ followingDay();
 // The function should return an array that contains every number //
 // from 1 to that number as seperate elements
 
-function takeInput() {
-  const val = prompt("Please enter the number: ");
-  let arr = [];
-  for (let i = 1; i <= val; i++) {
-    arr.push(i);
+// function takeInput() {
+//   const val = prompt("Please enter the number: ");
+//   let arr = [];
+//   for (let i = 1; i <= val; i++) {
+//     arr.push(i);
+//   }
+//   console.log(arr);
+// }
+
+// takeInput();
+/*
+ Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+Examples (input -> output)
+
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello"
+
+
+
+ */
+
+// function repeatStr(n, s) {
+//   let str = "";
+//   for (let i = 1; i <= n; i++) {
+//     str += s;
+//   }
+//   console.log(str);
+// }
+
+// repeatStr(5, "hi");
+
+// let repeatStr = (n, s) => s.repeat(n);
+
+// console.log(repeatStr(5, "Hi "));
+
+/* Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+Example
+
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+Fundamentals
+Arrays
+Lists*/
+// debugger;
+let nums = [];
+let result = [];
+let newPos = [];
+let posLength;
+let newNeg = 0;
+
+// nums.forEach((x, i) => {
+//   if (x < 0) {
+//     return (newNeg = newNeg + x);
+//   }
+
+//   if (x > 0) {
+//     return (newPos = i + 1);
+//   }
+// });
+// result.push(newPos, newNeg);
+//
+// // console.log(newNeg);
+
+// function newArray() {
+//   nums.forEach(x, i);
+//   neg(x);
+//   pos(x, i);
+//   result.push(newPos, newNeg);
+//   console.log(result);
+// }
+// function neg(x) {
+//   if (x < 0) {
+//     return (newNeg += x);
+//   } else {
+//     newNeg = null;
+//   }
+// }
+// function pos(x, i) {
+//   if (x > 0) {
+//     return (newPos = i + 1);
+//   } else newPos = null;
+// }
+// newArray();
+
+nums.forEach((x) => {
+  if (x > 0) {
+    newPos.push(x);
+    posLength = newPos.length;
+  } else {
+    posLength;
   }
-  console.log(arr);
+});
+
+const sum = nums.forEach((x) => {
+  if (x < 0) {
+    return (newNeg += x);
+  } else newNeg;
+});
+
+const finalPush = () => {
+  if (newPos && newNeg) {
+    result.push(posLength, newNeg);
+  } else {
+    result;
+  }
+};
+
+console.log(newNeg);
+console.log(posLength);
+console.log(result);
+
+//Create a function that takes in an array of numbers.
+// Return a new array containing every even number
+// from the original array (do not use map or filter)
+
+function arrayEven(arr) {
+  let newArr = [];
+  for (let i = 1; i <= arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+console.log(arrayEven([1, 2, 3, 4, 5, 6, 7, 8]));
+
+let arr = [1, 2, 3, 4, 5, 6];
+
+function mutli(x) {
+  let product = 1; // multiplying everything to the product
+  //   arr.forEach((num) => (product *= num));
+  for (let i = 0; i < arr.length; i++) {
+    product *= arr[i];
+  }
+  alert(product);
 }
 
-takeInput();
+mutli();
+// *Variables*
+// Declare a variable, reassign it to your favorite food, and alert the value
+let food = "momo";
+alert(`I would love to eat ${food} right now`);
+
+//Declare a variable, assign it a string, alert the second character in the string (Use your google-fu and the MDN)
+let word = "Hello"; // string in js also work as array.
+// alert(word[1]);
+alert(word.charAt(1));
+
+// *Functions*
+// Create a function that takes in 3 numbers. Divide the first two numbers and multiply the last. Alert the product. Call the function.
+function multiply(a, b, c) {
+  let result = (a / b) * c;
+  alert(result);
+}
+
+multiply(4, 2, 2);
+// Create a function that takes in 1 number. Console log the cube root of the number. Call the function.
+function cube(a) {
+  console.log(Math.cbrt(a).toFixed(2));
+}
+cube(9);
+// *Conditionals*
+//Create a function that takes in a month. If it is a summer month alert "YAY". If another other month, alert "Booo"
+//
+
+//*Loops*
+//Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
+
+function skipFives(n) {
+  for (let i = 1; i <= n; i++) {
+    s;
+    if (i % 5 !== 0) {
+      console.log(i);
+    }
+  }
+}
+skipFives(11);
