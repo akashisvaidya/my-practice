@@ -289,11 +289,11 @@ Fundamentals
 Arrays
 Lists*/
 // debugger;
-let nums = [];
-let result = [];
-let newPos = [];
-let posLength;
-let newNeg = 0;
+// let nums = [];
+// let result = [];
+// let newPos = [];
+// let posLength;
+// let newNeg = 0;
 
 // nums.forEach((x, i) => {
 //   if (x < 0) {
