@@ -72,3 +72,19 @@ const quarterOf = (m) => Math.ceil(m / 3);
 //or equal to a given number. e.g. Math.ceil(7.004); // 8 Math.ceil(-0.95); // -0
 
 ////---------------------------------------------------------------------------------------------------
+
+/* Description 
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+
+
+*/
+///--mySolution--///
+
+function solution(str) {
+  return str.split("").reverse().join("");
+}
+//--bestPractice--//
+////---------------------------------------------------------------------------------------------------
