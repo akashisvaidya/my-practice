@@ -56,41 +56,41 @@
 // const circle2 = new circle1(1);
 // console.log(circle2);
 
-// primitive type
-let x = 10;
-let y = x;
-x = 20;
-// console.log(x); // 20
-// console.log(y); // 10
+// // primitive type
+// let x = 10;
+// let y = x;
+// x = 20;
+// // console.log(x); // 20
+// // console.log(y); // 10
 
-//reference type
-let a = { value: 20 };
-let b = a;
+// //reference type
+// let a = { value: 20 };
+// let b = a;
 
-a.value = 40;
-// console.log(a); /// 40
-// console.log(b); /// 40
+// a.value = 40;
+// // console.log(a); /// 40
+// // console.log(b); /// 40
 
-let num = 10;
-function increase(num) {
-  num++;
-}
+// let num = 10;
+// function increase(num) {
+//   num++;
+// }
 
-increase(num);
-console.log(num);
+// increase(num);
+// console.log(num);
 
-let obj = { value: 10 };
+// let obj = { value: 10 };
 
-function increamentObj(obj) {
-  obj.value++;
-}
+// function increamentObj(obj) {
+//   obj.value++;
+// }
 
-increamentObj(obj);
-console.log(obj);
+// increamentObj(obj);
+// console.log(obj);
 
-obj.addedProperty = "this is the added property";
+// obj.addedProperty = "this is the added property";
 
-obj["newProperty"] = 2;
-const newName = "user-code";
-obj[newName] = { name: "dfhaju" };
-console.log(obj);
+// obj["newProperty"] = 2;
+// const newName = "user-code";
+// obj[newName] = { name: "dfhaju" };
+// console.log(obj);
