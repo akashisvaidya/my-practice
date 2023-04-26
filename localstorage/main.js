@@ -32,6 +32,7 @@ if (JSON.parse(localStorage.getItem("inputArr"))) {
 
 function handleOnClick() {
   const inputText = document.querySelector("input").value;
+  document.querySelector("input").value = "";
   if (inputText) {
     inputArr.push(inputText);
 
@@ -43,3 +44,10 @@ function handleOnClick() {
   displayArea.innerHTML = wordsTyped;
 }
 console.log(inputArr);
+
+document.querySelector(".reset").addEventListener("click", handleReset);
+
+function handleReset() {
+  localStorage.clear();
+  location.reload();
+}
