@@ -34,3 +34,14 @@ function findNextSquare(sq) {
 }
 
 console.log(findNextSquare(114));
+// other solution
+//  function findNextSquare(sq) {
+//    return Math.sqrt(sq) % 1 ? -1 : Math.pow(Math.sqrt(sq) + 1, 2);
+//  }
+
+function check(n) {
+  console.log(Math.sqrt(n) % 1);
+  return Math.sqrt(n) % 1 ? -1 : 2;
+}
+
+console.log(check(114));
