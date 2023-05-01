@@ -49,3 +49,9 @@ function twoSmall(num) {
 }
 
 console.log(twoSmall([19, 5, 42, 2, 77]));
+
+//// other soltuion
+function sumTwoSmallestNumbers(numbers) {
+  var [a, b] = numbers.sort((a, b) => a - b); /// destructring assignement syntax is used to assign the first two elements of the sorted array to variables a and b
+  return a + b;
+}
