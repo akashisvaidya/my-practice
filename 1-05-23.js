@@ -21,3 +21,10 @@ function positiveSum(arr) {
   return result;
 }
 console.log(positiveSum([-1, 2, 3, 4, -5]));
+///________________
+//using reduce method
+function povSum(arr) {
+  return arr.reduce((a, c) => a + (c > 0 ? c : 0), 0);
+}
+
+console.log(povSum([-1, 2, 3, 4, -5]));
