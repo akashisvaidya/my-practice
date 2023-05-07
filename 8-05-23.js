@@ -24,3 +24,25 @@ function highAndLow(numbers) {
 }
 
 console.log(highAndLow("1 2 3 4 5"));
+///////////////////////////////////
+
+function calculateYears(principle, interest, tax, desired) {
+  /// we have make  p >= d
+  // if p is alreat greater than d then y = 0
+  let years = 0;
+  if (principle < desired) {
+    for (let i = 1; principle <= desired; i++) {
+      let interestAmount = principle * interest;
+      let taxAmount = interestAmount * tax;
+      let intrestAfterTax = interestAmount - taxAmount;
+      let newPrinciple = principle + intrestAfterTax;
+      principle = newPrinciple;
+      years = i;
+      //   console.log(interest, tax, np);
+      console.log(j);
+    }
+    return years;
+  } else return 0;
+}
+
+console.log(calculateYears(1000, 0.01625, 0.18, 1200));
