@@ -49,3 +49,7 @@ function getCount2(str) {
 }
 
 console.log(getCount2("abracadabra"));
+
+function getMatch3(str) {
+  return str.match(/[aeiou]/gi) || [].length;
+}
