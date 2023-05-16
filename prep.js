@@ -10,20 +10,16 @@ function fizzBuzz(num) {
   //loop
   //conditionals %3&5 , %3 , %5
   //console.log num or fizz, biz, fizzBuzz
-  for (let i = 1; i < num; i++) {
+  for (let i = 1; i <= num; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
       console.log("fizzbuzz");
-      i++;
-    }
-    if (i % 3 == 0) {
+    } else if (i % 3 == 0) {
       console.log("fizz");
-      i++;
-    }
-    if (i % 5 == 0) {
+    } else if (i % 5 == 0) {
       console.log("buzz");
-      i++;
+    } else {
+      console.log(i);
     }
-    console.log(i);
   }
 }
 
