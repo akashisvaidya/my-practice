@@ -23,3 +23,9 @@ function testEven(n) {
 }
 
 console.log(testEven(9));
+
+function testOdd(n) {
+  return n % 2 === 1;
+}
+
+console.log(testOdd(1));
