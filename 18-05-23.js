@@ -15,3 +15,11 @@ function addBinary(a, b) {
 /// result => 1,1 => 10 i.e. binary of 2
 
 console.log(addBinary(5, 9));
+
+function testEven(n) {
+  if (n % 2 === 0) {
+    return true;
+  } else return false;
+}
+
+console.log(testEven(9));
